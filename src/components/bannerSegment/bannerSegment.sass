@@ -32,7 +32,7 @@
       align-items: center
 
   &__positionText
-    font-family: Ebrima
+    font-family: Montserrat-Black
     font-size: 25px
     font-weight: bold
     padding: 15px 0 0 0
@@ -65,25 +65,24 @@
 
   &__imageBanner
     z-index: 9
-    +min(1901)
-      position: absolute
-      margin-left: 29%
-    +max(1900)
-      position: absolute
-      margin-left: 28%
-    +max(1800)
-      position: absolute
-      margin-left: 23%
-    +max(1280)
-      margin-left: 14%
-    +max(1150)
-      margin-left: 11%
+    position: absolute
+    margin-left: 11%
+    +min(1910)
+      margin-left: 4%
     +max(1050)
-      display: none
+      margin-left: 0
+
+  &__imageSize
+    width: 90%
+    height: auto
+    +max(1050)
+      width: 55%
+      height: auto
+      margin-top: 32%
 
   &__textBoxTitle
     z-index: 6
-    font-family: Ebrima
+    font-family: Montserrat-Black
     font-size: 25px
     font-weight: bold
     text-align: right
@@ -111,7 +110,7 @@
 
   &__textBoxDesc
     z-index: 6
-    font-family: Ebrima
+    font-family: Montserrat-Black
     margin-top: 55px
     +min(1051)
       margin-left: 24%
@@ -122,6 +121,7 @@
       align-items: center
 
   &__textBoxLt
+    font-family: Montserrat-Black
     font-size: 15px
     font-weight: bold
     padding: 6px 0 0 0
