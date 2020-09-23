@@ -1,0 +1,58 @@
+.servicesPage
+  z-index: 2
+
+  &__servicesContener
+    width: 80%
+    display: flex
+    flex-direction: column
+    max-width: 1370px
+    margin: 0 auto
+    flex-wrap: wrap
+
+  &__servicesMainTitlePage
+    font-family: Montserrat-Light
+    font-size: 68px
+    font-weight: bold
+    padding-bottom: 100px
+    padding-top: 30px
+    letter-spacing: 4px
+    +max(1050)
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &__servicesContnet
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    padding-left: 15px
+    +max(1050)
+      width: 100%
+      margin-top: 50px
+
+  &__servicesCont
+    z-index: 5
+    +min(1051)
+      position: relative
+      flex-basis: 33.333%
+      justify-content: center
+      align-items: center
+      padding: 0 0 140px 6%
+    +max(1050)
+      padding: 100px 0 0 0
+      width: 100%
+      flex-direction: column
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &__servicesTitle
+    font-family: Montserrat-Black
+    font-size: 26px
+    font-weight: bold
+    padding-top: 28px
+    width: 90px
+
+  &__servicesImage
+    width: 15%
+    height: auto
