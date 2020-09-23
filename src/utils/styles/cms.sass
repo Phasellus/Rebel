@@ -1,0 +1,141 @@
+=cms
+  display: block
+  width: 100%
+  padding: 0 5px
+  font-weight: 400
+  line-height: 150%
+  //HTML Text
+  p
+    font-family: 'Lato', sans-serif
+    margin-bottom: 30px
+
+    +max(767)
+      font-size: 16px
+
+    
+
+  //HTML Text Formatting Elements
+  strong
+    font-weight: 700
+
+  b
+    font-weight: 500
+
+  em, i
+    font-style: italic
+
+  u, ins
+    text-decoration: underline
+
+  small
+    font-size: smaller
+
+  mark
+    background-color: $yellow
+    color: inherit
+
+  del
+    text-decoration: line-through
+
+  sub
+    font-size: smaller
+    vertical-align: sub
+
+  sup
+    font-size: smaller
+    vertical-align: super
+
+  //HTML Lists
+  ul
+    display: block
+    padding-left: 20px
+    list-style-type: disc
+    margin-bottom: 30px
+    list-style-type: disc
+  ul > ul, ol 
+      margin-bottom: 0
+
+  ol
+    display: block
+    padding-left: 20px
+    list-style-type: decimal
+    margin-bottom: 30px
+    
+  ol li ol
+    list-style-type: upper-alpha
+
+  ol li ol li ol
+    list-style-type: upper-roman
+
+  ol > ul, ol 
+      margin-bottom: 0
+
+  li
+    display: list-item
+    text-align: match-parent
+    margin-bottom: 30px
+
+  //HTML Tables
+  table
+    display: table
+    width: 100%
+    border-color: $mine-shaft
+    color: $mine-shaft
+    border-collapse: collapse
+    border-spacing: 2px
+
+  tr
+    display: table-row
+    border-color: inherit
+    background-color: $white
+    vertical-align: inherit
+
+    &:nth-child(even)
+      background-color: $alto
+
+  td, th
+    padding: 8px
+    border: 1px solid $mine-shaft
+    text-align: left
+
+  // Image
+  img
+    display: block
+    max-width: 100%
+    height: auto
+    margin: 0 auto
+
+  // Link
+  a
+    color: inherit
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+  // Grid
+  .cms-col-25
+    width: 25%
+    padding: 15px
+    float: left
+
+    +max(767)
+      width: 100%
+
+  .cms-col-33
+    width: 33.33%
+    padding: 15px
+    float: left
+
+    +max(767)
+      width: 100%
+
+  .cms-col-50
+    width: 50%
+    padding: 15px
+    float: left
+
+    +max(767)
+      width: 100%
+
+.cmsContainer
+  +cms

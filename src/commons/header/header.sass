@@ -1,0 +1,86 @@
+.header
+  display: block
+  width: 100%
+  padding: 15px 0 5px
+  transition: .2s
+  background-color: white
+
+  +max(1050)
+    padding: 15px 0
+
+  +max($bp-md)
+    padding: 10px 0
+
+  &__container
+    +container
+
+    +max($bp-md)
+      width: 95%
+
+  &__box
+    display: flex
+    justify-content: flex-start
+    +max(969)
+      justify-content: space-between
+
+    +max(1050)
+      flex-wrap: wrap
+
+    +max($bp-md)
+      flex-wrap: nowrap
+
+  &__item
+    width: 20%
+    padding: 0 10px
+    transition: .2s
+
+    &.-logo
+      padding: 0 10px 0 0
+
+      +max(1050)
+        width: 100%
+        padding: 10px 0
+        text-align: center
+
+      +max($bp-md)
+        width: auto
+        padding: 0
+
+    &.-nav
+      width: 65%
+
+      +max(1050)
+        width: 80%
+
+      +max($bp-md)
+        display: none
+
+    &.-switchLang
+      width: 12%
+      padding: 0 0 0 10px
+      +max(1650)
+        width: 12.5%
+
+      +max(1550)
+        width: 14%
+
+      +max(1400)
+        width: 15%
+
+      +max(1380)
+        width: 16%
+
+      +max(1220)
+        width: 18%
+
+      +max($bp-md)
+        display: none
+
+      +max(1050)
+        width: 20%
+
+    &.-mobile
+      position: relative
+      width: 50px
+      +min($bp-md)
+        display: none

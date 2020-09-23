@@ -1,0 +1,63 @@
+.customerSegment
+  z-index: 2
+
+  &__customerContener
+    width: 100%
+    display: flex
+    flex-direction: column
+    max-width: 1370px
+    margin: 0 auto
+
+  &__customeMainTitle
+    font-family: Ebrima
+    font-size: 51px
+    padding-left: 6%
+    font-weight: bold
+    margin-top: 47px
+    letter-spacing: 4px
+    padding-bottom: 63px
+    +max(1050)
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-bottom: 0
+
+  &__customContnet
+    +min(1051)
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+      padding: 0 6% 0 10%
+
+    +max(1050)
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      margin-top: 50px
+
+  &__customPosition
+    z-index: 5
+    +min(1051)
+      position: relative
+      flex-basis: 25%
+      padding-top: 50px
+      display: flex
+      justify-content: center
+      align-items: center
+    +max(1050)
+      position: relative
+      flex-basis: 50%
+      padding: 50px 0 0 0
+      display: flex
+      justify-content: center
+      align-items: center
+
+  &__customImage
+    width: 100%
+    height: auto
+    padding: 0 15px 15px 15px
+    border-bottom: solid 3px #ffffff
+    +max(1050)
+      width: 80%
