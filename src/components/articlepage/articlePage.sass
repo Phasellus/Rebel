@@ -60,9 +60,15 @@
     height: auto
     display: flex
     flex-direction: row
+    +max(1050)
+      flex-direction: column
+      justify-content: center
+      align-items: center
 
   &__articleBoxOne
     width: 40%
+    +max(1050)
+      width: 60%
 
   &__articleBoxOneImg
     width: 3%
@@ -72,6 +78,11 @@
     width: 21.625em
     height: auto
     margin-top: 3.75em
+    +max(1050)
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
 
   &__articleBoxOneFont
     color: #030405
@@ -83,10 +94,16 @@
   &__articleBoxTwo
     width: 60%
     height: auto
+    +max(1050)
+      padding-top: 30px
 
   &__articleBoxTwoImage
     width: 100%
     height: 25em
+    +max(1050)
+      height: 20em
+    +max(750)
+      height: 13em
 
   &__articleContentBoxTwo
     width: 100%
