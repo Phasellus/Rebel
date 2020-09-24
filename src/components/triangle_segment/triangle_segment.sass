@@ -6,7 +6,8 @@
   align-items: center
   max-width: 1370px
   margin: 0 auto
-  padding-left: 77px
+  +min(1051)
+    padding-left: 77px
 
   &__triangleImage
     z-index: 3
@@ -37,24 +38,26 @@
       padding: 0 0 0 0
 
   &__triangelTransform
-    +min(1051)
-
     +max(1050)
       padding: 0 300px 0 0
       transform: rotate(-90deg)
+      width: 100%
 
   &__triangelContener
     z-index: 5
     +min(1051)
       position: relative
+      padding-left: 40px
       flex-basis: 33.333%
+      display: flex
+      justify-content: center
     +max(1050)
       position: relative
       flex-basis: 33.333%
-      padding: 100px 0 0 0
       display: flex
       justify-content: center
-      align-items: center
+      padding-top: 40px
+
 
 
   &__triangelElement
@@ -65,15 +68,35 @@
   &__triangelTitle
     padding: 20px 0 0 0
     font-family: Montserrat-Black
-    font-size: 26px
+    font-size: 1.625em
     font-weight: bold
+    height: 60px
 
   &__triangelDesc
-    padding: 20px 0 0 0
+    padding: 1.25em 0 0 0
     font-family: Montserrat-Light
-    font-size: 17px
+    font-size: 1.0625em
+    display: flex
+    align-items: center
+    height: auto
 
   &__triangelBox
+    +min(1051)
+      width: 75%
+      display: flex
+      flex-wrap: wrap
+    +max(1050)
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      margin-top: 50px
+
+  &__triangelIcon
+    width: 20%
+    height: auto
+
+  &__triangelCont
+    padding: 100px 0 0 0
     +min(1051)
       width: 75%
       display: flex

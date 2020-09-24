@@ -11,7 +11,7 @@
 
   &__servicesMainTitlePage
     font-family: Montserrat-Light
-    font-size: 68px
+    font-size: 4.25em
     font-weight: bold
     padding-bottom: 100px
     padding-top: 30px
@@ -39,8 +39,8 @@
       align-items: center
       padding: 0 0 140px 6%
     +max(1050)
-      padding: 100px 0 0 0
-      width: 100%
+      padding: 50px 0 0 0
+      flex-basis: 50%
       flex-direction: column
       display: flex
       justify-content: center
@@ -48,11 +48,18 @@
 
   &__servicesTitle
     font-family: Montserrat-Black
-    font-size: 26px
+    font-size: 2em
     font-weight: bold
     padding-top: 28px
     width: 90px
+    +max(1050)
+      width: 90px
+      text-align: center
 
   &__servicesImage
-    width: 15%
+    width: 25%
     height: auto
+
+  &_servicesActive
+    width: 33.333%
+    background-color: #F07F1A
