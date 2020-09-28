@@ -12,6 +12,9 @@
     flex-direction: column
     max-width: 1370px
     margin: 0 auto
+    +max(1050)
+      display: flex
+      justify-content: center
 
   &__contentMainTitle
     z-index: 100
@@ -101,5 +104,49 @@
 
   &__contentBoxTwo
     width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-top: 6.4375em
+
+  &__contentBoxTwoImage
+    width: 50%
+
+  &__contentBoxTwoImg
+    width: 3%
+    height: auto
+
+  &__contnetBoxTwoTextArea
+    width: 50%
+    height: auto
+    padding-left: 3.75em
+    padding-bottom: 40px
+
+  &__contentBoxTwoText
+    font-family: Montserrat-Black
+    font-size: 1.8125em
+    text-align: left
+    width: 100%
+    font-weight: bold
+
+  &__contentBoxThree
+    width: 100%
+    display: flex
+    justify-content: center
+
+    flex-direction: row
+    height: 550px
+    padding-top: 80px
+    padding-bottom: 80px
+    +max(1050)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      height: auto
 
 
+  &__contentBoxThreeImg
+    width: 38%
+    height: auto
+    padding: 5px
